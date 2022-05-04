@@ -1,5 +1,5 @@
 import unittest
-from src.evolve import *
+from evolve import *
 
 class TestEvolveMethods(unittest.TestCase):
 
