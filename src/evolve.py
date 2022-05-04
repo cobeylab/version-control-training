@@ -24,7 +24,7 @@ def mate(a, b):
         4. beginning of b, then the end of a
     """
     place = int(len(a)/2)
-    return a, b, b[:place] + a[place:], a[:place] + b[place:]
+    return a, b, a[:place] + b[place:], b[:place] + a[place:]
 
 def evolve(seed, target_string, alphabet, population_size=100):
     """Randomly mutate populations of seed until it "evolves" into target_string."""
