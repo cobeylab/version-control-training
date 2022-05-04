@@ -8,10 +8,9 @@ Some understanding of command line interfaces is helpful, but each command will 
 
 ## Dependencies
 
-* Internet connection
-git
-* Terminal program
-* Text editor
+* [git](https://github.com/git-guides/install-git)
+* A [terminal program](https://en.wikipedia.org/wiki/List_of_terminal_emulators)
+* A text editor or an IDE
 * Github account (Note: the same steps can be used for any git service such as Gitlab, but pull request and other interfaces will be slightly different.)
 * Python 3 (optional)
 
