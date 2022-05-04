@@ -1,5 +1,4 @@
 """Module for simulating evolution of strings."""
-
 from random import choice, random
 from functools import partial
 
@@ -26,7 +25,6 @@ def mate(a, b):
     """
     place = int(len(a)/2)
     return a, b, b[:place] + a[place:], a[:place] + b[place:]
-
 
 def evolve(seed, target_string, alphabet, population_size=100):
     """Randomly mutate populations of seed until it "evolves" into target_string."""
