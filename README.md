@@ -13,7 +13,7 @@ git
 A terminal program
 A text editor
 A Github account (Note: the same steps can be used for any git service such as Gitlab, but pull request and other interfaces will be slightly different.)
-
+Python 3 (optional)
 
 ## What is git?
 
@@ -233,7 +233,7 @@ git log
 ```
 
 
-Before you push, (and usually before you commit!) you should make sure the code passes any test suite for the repository. For this one, you can run it by typing `python tests.py`. For other repositories, the command will be different.
+Before you push, (and usually before you commit!) you should make sure the code passes any test suite for the repository. For this one, you can run it by typing `python -m unittest` or `pytest` (requires [Pytest](https://docs.pytest.org)). For other repositories, the command may be different.
 
 Once you're satisfied that your local commits are ready to be shared with other contributors, you can do a `git push` to send any local commits that haven't been sent to the remote repository.
 
