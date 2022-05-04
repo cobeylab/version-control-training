@@ -18,7 +18,7 @@ Some understanding of command line interfaces is helpful, but each command will 
 
 Git is a version control system.
 
-* Used primarily for source code but many other uses (documents, web content) exit.
+* Used primarily for source code but many other uses (documents, web content) exist.
 
 * Core features include tracking the contents of files over time, facilitating collaboration on files, and diffing (comparing) documents and whole repositories.
 
@@ -29,7 +29,7 @@ Git is a version control system.
 
 * Free and open source
 
-* Two popular services are built on git: Github and Gitlab. Github is the most widely used, but Gitlab has a very good open source implementation of the entire service. These services add the ability to host and distribute repos online on top of the basic functionality of git.
+* Two popular services are built on git: Github and Gitlab. Github is the most widely used, but Gitlab has a very good open source implementation of the entire service. These services add the ability to host and distribute repos online on top of the basic functionality of a git server.
 
 
 ## Motivation
@@ -38,7 +38,7 @@ The ultimate goal for using version control in science is collaboration, reprodu
 
 Large and complex codebases are very difficult to manage and are sensitive to error. One small mistake in a codebase can have a major impact on its function and validity.
 
-Collaboration with other researchers, satisfaction of journal or funder requirements, direct impact on the practice of science. At the very least, a canonical copy of a codebase is a prerequisite to any digital reproducibility. Usually, the bar is much higher: documentation, a test suite, claims about expected results etc.
+Git services can also satisfy journal or funder requirements, and repositories distributed this way can have a direct impact on the practice of science. At the very least, a canonical copy of a codebase is a prerequisite to any digital reproducibility. Usually, the standard is much higher and additional details will need to be included: documentation, a test suite, claims about expected results and so on.
 
 
 ## Topics
