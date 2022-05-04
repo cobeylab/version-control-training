@@ -8,12 +8,12 @@ Some understanding of command line interfaces is helpful, but each command will 
 
 ## Dependencies
 
-An internet connection.
+* Internet connection
 git
-A terminal program
-A text editor
-A Github account (Note: the same steps can be used for any git service such as Gitlab, but pull request and other interfaces will be slightly different.)
-Python 3 (optional)
+* Terminal program
+* Text editor
+* Github account (Note: the same steps can be used for any git service such as Gitlab, but pull request and other interfaces will be slightly different.)
+* Python 3 (optional)
 
 ## What is git?
 
