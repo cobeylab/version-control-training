@@ -271,9 +271,28 @@ Enter a title and description for the pull request. You should describe all of t
 Once the pull request is approved, it is merged into the target branch. In large-scale projects, this branch may be several steps away from becoming canonical on the "main" branch. In smaller-scale projects, there may only be a "develop" branch and a "main" branch, and in many small projects, there's only a "main" branch. Larger, more error-sensitive projects, and those with more developers will have more elaborate branching strategies.
 
 
+## Next steps
+
+### Other Git Interfaces
+
+#### Editors and Integrated Development Environments (IDEs)
+
+Command-line git can be used with any editor or IDE. If you'd like to use git integrated with your coding environment, here are some options:
+
+*Visual Studio Code:* VSCode provides git integration without a plug-in. Click "Source Control" in the lefthand menu bar. All of the functionality that should be familiar -- create a branch, commit, show status -- are available there. For more information, see [Use Git version-control tools in Visual Studio Code](https://docs.microsoft.com/en-us/learn/modules/use-git-from-vs-code/).
+
+*RStudio:* RStudio also supports git out-of-the-box. Diff, commit, pull/push functions are in Tools --> Version Control. For more information, see [Using Git within RStudio](https://cfss.uchicago.edu/setup/git-with-rstudio/).
+
+#### GUIs
+
+There are a large number of graphical interfaces for git listed on the [git web site](https://git-scm.com/downloads/guis/).
+
+
 ## Funding and Acknowledgments
 
-# TODO
+This work was funded by [Centers of Excellence for Influenza Research and Response (CEIRR)](https://www.ceirr-network.org/).
+
+Portions of this tutorial were adapted from the [Cobey Lab Handbook](https://cobeylab.github.io/lab_handbook/).
 
 
 
