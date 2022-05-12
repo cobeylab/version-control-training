@@ -199,8 +199,9 @@ vi src/evolve.py
 
 ```
 
-Let's say we have something valuable to contribute. Check on the changes to make sure they're what you intended.
+_Note: To see what changes might look like, there's already a branch `command-line-ui-example-branch` with some simple modifications: https://github.com/cobeylab/version-control-training/compare/command-line-ui-example-branch_
 
+Let's say we have something valuable to contribute. Check on the changes to make sure they're what you intended.
 
 Did you inadvertently add any new files? Is evolve.py the only file that has changed?
 
