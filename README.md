@@ -71,6 +71,10 @@ Clone a repository.
 
 git clone git@github.com:cobeylab/version-control-training.git
 
+```
+
+``` bash
+
 # List files in the current directory. version-control-training should be one of them.
 
 ls
@@ -97,17 +101,21 @@ In order to avoid undesirable changes to the main branch, the first step is usua
 
 Suppose you want to start a project to add a command line UI to the evolution of strings program.
 
-``` bash
+Create, and check out a new branch.
 
-# This will create, and check out a new branch.
+``` bash
 
 git checkout -b command-line-ui
 
-# Or
+
+```
+
+Or
+
+``` bash
 
 git branch command-line-ui
 git checkout command-line-ui
-
 
 ```
 
@@ -133,9 +141,10 @@ git status -s
 
 Check to see what the changes were line by line.
 
+_Note: In this interface, page through by pushing j on the keyboard, and quit by pushing q._
+
 ``` bash
 
-# In this interface, page through by pushing j on the keyboard, and quit by pushing q.
 git diff
 
 ```
@@ -156,25 +165,33 @@ For instance, it's easier to understand a commit where all the extra spaces are 
 
 Suppose you've done some coding on a file and the changes don't work well and you want to go back to the original version. (Specifically, this will be the last commit of the currently checked-out branch.)
 
+Overwrite your changes. Note: Only do this if you are sure you don't want to keep changes to evolve.py.
+
 ``` bash
 
-# Overwrite your changes. Note: Only do this if you are sure you don't want to keep changes to evolve.py.
 git checkout src/evolve.py
-
-# You could follow with:
-
-git status -s
-
-# Or:
-
-git diff
-
-# to verify the file has been reset.
 
 ```
 
-Now that the first attempt at changes to `evolve.py` have been overwritten, let's try again.
+You could follow with
 
+``` bash
+
+git status -s
+
+```
+
+or
+
+``` bash
+
+git diff
+
+```
+
+to verify the file has been reset.
+
+Now that the first attempt at changes to `evolve.py` have been overwritten, let's try again.
 
 ``` bash
 
@@ -182,16 +199,21 @@ vi src/evolve.py
 
 ```
 
-Let's say we have something valuable to contribute. Check on the changes to make sure they're what you intended:
+Let's say we have something valuable to contribute. Check on the changes to make sure they're what you intended.
 
+
+Did you inadvertently add any new files? Is evolve.py the only file that has changed?
 
 ``` bash
 
-# Did you inadvertently add any new files?
-# Is evolve.py the only file that has changed?
 git status -s
 
-# What are the specific changes?
+```
+
+What are the specific changes?
+
+``` bash
+
 git diff
 
 ```
@@ -210,20 +232,7 @@ The changes are now committed to your local `command-line-ui` branch. They have 
 
 You may do this several times before "pushing" the commits to the remote repository. Usually multiple commits are pushed at one time.
 
-``` bash
-
-# Add help text for the command line user.
-vi src/evolve.py
-
-# These are the differences between the current file, and the previous commit "Add command line interface." above.
-git diff
-
-# Commit. You can commit one file at a time by specifying the file name.
-git commit src/evolve.py -m "Add help text"
-
-```
-
-To look at all the commits you've added to the local branch, do a `git log`.
+To look at all the commits you've added to the local branch, use `git log`.
 
 ``` bash
 
@@ -234,7 +243,7 @@ git log
 
 Before you push, (and usually before you commit!) you should make sure the code passes any test suite for the repository. For this one, you can run it by typing `pytest` (requires [Pytest](https://docs.pytest.org)). For other repositories, the command may be different.
 
-Once you're satisfied that your local commits are ready to be shared with other contributors, you can do a `git push` to send any local commits that haven't been sent to the remote repository.
+Once you're satisfied that your local commits are ready to be shared with other contributors, you can use `git push` to send any local commits that haven't been sent to the remote repository.
 
 ``` bash
 
@@ -249,13 +258,13 @@ Navigate to https://github.com/cobeylab/version-control-training. You should see
 
 You can think of this process as having four reservoirs where code can be stored, edited, compared, and approved.
 
-The first is the file buffer where you edit the file in an editor before its saved to disc.
+The first is the _file buffer_ where you edit the file in an editor before its saved to disc.
 
-The second is the saved, "staged," files that can be compared to the last commit with `git diff`.
+The second is the _saved, "staged," files_ that can be compared to the last commit with `git diff`.
 
-The third is the branch, which stores commits. You can list the commits with `git log`. A branch can also have new commits locally that haven't been pushed to the remote repository.
+The third is the _branch_, which stores commits. A branch can also have new commits locally that haven't been pushed to the remote repository.
 
-The fourth is the pull request. The pull request doesn't really store code, and in fact future commits to the same branch will be automatically included in the PR, but it can be thought of as one of these reservoirs where code is contemplated on before moving -- eventually -- to the main branch.
+The fourth is the _pull request_. The pull request doesn't really store code, and in fact future commits to the same branch will be automatically included in the PR, but it can be thought of as one of these reservoirs where code is considered and modified before moving -- eventually -- to the main branch.
 
 
 ## Opening a pull request
