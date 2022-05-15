@@ -66,7 +66,7 @@ Push: Copy the latest version of the file on a branch to the remote repository.
 
 ## Visualization of Branching and Merging
 
-The process that this lesson covers is usually depicted as follows. Lines are branches, dots are commits. Over time, the lines get longer left-to-right as commits are added (changes are made).
+The process that this lesson covers is usually depicted as follows. Lines are branches. Dots are commits. Over time, the lines get longer left-to-right as commits are added (changes are made).
 
 
 **State of the repository now**
@@ -82,7 +82,6 @@ _(One branch with a few commits.)_
 **After adding some commits to the branch**
 
 ![After adding commits](images/after_commits.png)
-
 
 **After the branch has been merged in to main**
 
