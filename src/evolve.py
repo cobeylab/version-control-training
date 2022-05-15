@@ -52,12 +52,27 @@ def evolve(seed, target_string, alphabet, population_size=100):
         generations += 1
     return generations
 
-seed = sys.argv[1]
-target = sys.argv[2]
-alphabet = sys.argv[3]
+<<<<<<< HEAD
 
-generations = evolve(seed, target, alphabet)
-print(f"Success in {generations} generations!")
+if __name__ == "__main__":
+    seed = sys.argv[1]
+    target = sys.argv[2]
+    alphabet = sys.argv[3]
+
+    generations = evolve(seed, target, alphabet)
+    print(f"Success in {generations} generations!")
 
 
+=======
+
+if __name__ == "__main__":
+    # Command line parsing
+    seed = sys.argv[1]
+    target = sys.argv[2]
+    alphabet = sys.argv[3]
+
+    generations = evolve(seed, target, alphabet)
+
+    print(f"Success in {generations} generations!")
+>>>>>>> af6a1643e3035b7581c3e92b0353b9a82256c866
 
