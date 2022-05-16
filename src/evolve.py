@@ -52,6 +52,7 @@ def evolve(seed, target_string, alphabet, population_size=100):
         generations += 1
     return generations
 
+# Command line parsing
 seed = sys.argv[1]
 target = sys.argv[2]
 alphabet = sys.argv[3]
