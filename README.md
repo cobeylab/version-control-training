@@ -324,6 +324,10 @@ Command-line git can be used with any editor or IDE. If you'd like to use git in
 
 There are a large number of graphical interfaces for git listed on the [git web site](https://git-scm.com/downloads/guis/).
 
+#### Shell Integration
+
+There are shell integrations that can make using git safer and easier on the command line. Customizing your prompt with git-related info is a common one. The prompt can show the current branch, whether there are local changes, whether or not a directory has git metadata et cetera. See instructions for [bash](https://www.git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Bash) and [zsh](https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Zsh).
+
 
 ## Funding and Acknowledgments
 
