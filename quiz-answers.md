@@ -2,8 +2,8 @@
 
 1. The first step to contributing to a repository is to make a copy, or ____ it.
   - ~~a. merge~~
-  - b. **commit**
-  - ~~c. clone~~
+  - ~~b. commit~~
+  - c. **clone**
   - ~~d. browse~~
 
 2. The three main data structures in git are:
