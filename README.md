@@ -271,11 +271,11 @@ git log
 
 Before you push, (and usually before you commit!) you should make sure the code passes any test suite for the repository. For this one, you can run it by typing `pytest` (requires [Pytest](https://docs.pytest.org)). For other repositories, the command may be different.
 
-Once you're satisfied that your local commits are ready to be shared with other contributors, you can use `git push` to send any local commits that haven't been sent to the remote repository.
+Once you're satisfied that your local commits are ready to be shared with other contributors, you can use `git push` to send any local commits that haven't been sent to the remote repository. (Origin refers to the originating repository.)
 
 ``` bash
 
-git push
+git push origin command-line-ui
 
 ```
 
