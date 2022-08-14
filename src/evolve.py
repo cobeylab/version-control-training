@@ -53,13 +53,13 @@ def evolve(seed, target_string, alphabet, population_size=100):
         generations += 1
     return generations
 
+if __name__ == "__main__":
+    seed = sys.argv[1] 
+    dna_target = sys.argv[2] 
+    dna_alphabet = sys.argv[3] 
 
-seed = sys.argv[1] 
-dna_target = sys.argv[2] 
-dna_alphabet = sys.argv[3] 
-
-dna_generations = evolve(seed, dna_target, dna_alphabet)
-print(f"Success in {dna_generations} generations!")
+    dna_generations = evolve(seed, dna_target, dna_alphabet)
+    print(f"Success in {dna_generations} generations!")
 
 
 
