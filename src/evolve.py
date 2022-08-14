@@ -1,3 +1,6 @@
+import sys
+
+
 """Module for simulating evolution of strings."""
 from random import choice, random
 from functools import partial
@@ -50,30 +53,13 @@ def evolve(seed, target_string, alphabet, population_size=100):
         generations += 1
     return generations
 
-print("Evolve some strings.")
 
-"""
-
-Classic example. From random seed to english sentence.
-
-"""
-seed = "RHBpoxYLCGjNpUgLYnMfiKskRHmk"
-target = "METHINKS IT IS LIKE A WEASEL"
-alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
-
-generations = evolve(seed, target, alphabet)
-print(f"Success in {generations} generations!")
-
-
-"""
-
-DNA example.
-
-"""
-seed = "CGATGATGTATACTGTACGTATCTACTAC"
-dna_target = "AATCCGCTAGGTATCAGACTAGTAGCAGT"
-dna_alphabet = "ATCG"
+seed = sys.argv[1] 
+dna_target = sys.argv[2] 
+dna_alphabet = sys.argv[3] 
 
 dna_generations = evolve(seed, dna_target, dna_alphabet)
 print(f"Success in {dna_generations} generations!")
+
+
 
