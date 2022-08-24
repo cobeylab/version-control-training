@@ -1,4 +1,4 @@
-# Git for Science
+# Git & Version Control in Research
 ### Part 1: First steps. From cloning to pull request.
 
 ## Prerequisites
@@ -34,11 +34,19 @@ Git is a version control system.
 
 ## Motivation
 
-The ultimate goal for using version control in science is collaboration, reproduction and reuse, and to prevent errors.
+The ultimate goals for using version control in science are collaboration, reproduction and reuse, and error prevention.
 
-Large and complex codebases are very difficult to manage and are sensitive to error. One small mistake in a codebase can have a major impact on its function and validity.
+According to a [survey](https://www.nature.com/articles/533452a) conducted by Nature in 2016, lack of methods or code is a factor in research that can't be reproduced "always," or "very often" according to 45% of respondents. (Another 36% said it sometimes contributes.) 56% of respondents said they have failed to reproduce *their own* results. The reasons for self-irreproducibility are not enumerated, but anecdotally code is a common source of this type of confusion.
 
-Git services can also satisfy journal or funder requirements, and repositories distributed this way can have a direct impact on the practice of science. At the very least, a canonical copy of a codebase is a prerequisite to any digital reproducibility. Usually, the standard is much higher and additional details will need to be included: documentation, a test suite, claims about expected results and so on.
+A similar, possibly stronger statement in this direction comes from a 2009 [meta-analysis of microarray-based gene expression studies](https://pubmed.ncbi.nlm.nih.gov/19174838/) that found "The main reason for failure to reproduce was data unavailability, and discrepancies were mostly due to incomplete data annotation or specification of data processing and analysis." A [figure](https://www.nature.com/articles/ng.295/figures/1) from that paper illustrates the breakdown. The majority of causes relate to *lack of information*: code, data, and methods.
+
+So information must be shared for verifiable science. But it must also be precise. A common misconception on the part of code authors is that, despite some lack of explicit information in a codebase, the bulk of the well-specified code will tend to fill in the gaps. This is certainly possible, but it's not the natural tendency. In [*Ten Simple Rules for Reproducible Computational Research*](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285), this issue is summarized by describing the combinatorical explosion of results consistent with some published methods. "There will for a given analysis be an exponential number of possible combinations of software versions, parameter values, pre-processing steps, and so on, meaning that a failure to take notes may make exact reproduction essentially impossible." Version control can help authors achieve a higher level of precision and completeness, both for their own uses, and robust science in general.
+
+The specific reasons for version control's superiority over other methods will hopefully become clear. It has the advantage over other systems used to store metadata about files like plain filesystems, cloud storage, or email because it was designed for the purpose of managing code, and other system have for the most part ceded this territory.
+
+The core feature version control offers is stepwise refinement. Commits, branches and branch names, logs, diffs, and pull requests are specially-designed metadata that allow a user to refine textual information in small batches, merging it into files that have already been refined, and this process continues to a greater and greater degree until changes reach the most refined, main branch. This divide-and-conquer approach common to other aspects of software development has an algebraic or logical quality to it. Making one small, valid move after another leads to a valid whole.
+
+Many other benefits are highlighted by the version-control-in-science literature including [backing up or moving data between machines](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668), [tracking author contributions, satisfying journal or funder requirements, and "risk-free exploration of new ideas"](https://scfbm.biomedcentral.com/articles/10.1186/1751-0473-8-7). These are all great reasons to adopt version control.
 
 
 ## Topics
@@ -368,5 +376,5 @@ This work was funded by [Centers of Excellence for Influenza Research and Respon
 
 Portions of this tutorial were adapted from the [Cobey Lab Handbook](https://cobeylab.github.io/lab_handbook/).
 
-
+Excellent feedback and discussion came from Sarah Cobey and the [Cobey Lab](https://cobeylab.uchicago.edu/people).
 
